@@ -1,3 +1,4 @@
+import { FormStyle } from './Form.styled';
 import { Component } from 'react';
 
 export class Form extends Component {
@@ -31,7 +32,7 @@ export class Form extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
+        <FormStyle onSubmit={this.handleSubmit}>
           <label>
             <p>Name</p>
             <input
@@ -53,7 +54,7 @@ export class Form extends Component {
             />
           </label>
           <button type="submit">Add contact</button>
-        </form>
+        </FormStyle>
       </div>
     );
   }
